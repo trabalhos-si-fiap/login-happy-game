@@ -194,7 +194,7 @@
   
 }
 
-#enviar_login{
+.btn_padrao{
     background-color: var(--cor-clara);
     border: 2px solid var(--cor-escura);
     color: var(--cor-escura);
@@ -203,11 +203,11 @@
     width: 370px;
     height: 50px;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 15px;
     
 }
 
-#enviar_login:hover{
+.btn_padrao:hover{
     background-color: var(--cor-escura);
     color: var(--cor-clara);
     transition: .5s;
@@ -224,4 +224,8 @@
     visibility: visible;
 }
 
-
+ .link_login{
+    font-size: 20px;
+    margin-top: none;
+    width: 100%;
+}
