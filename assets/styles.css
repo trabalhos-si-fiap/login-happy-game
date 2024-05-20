@@ -1,0 +1,227 @@
+/* Configs gerais e da pagina principal de cadastro*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte), sans-serif;
+}
+
+:root {
+    --fonte: 'Poppins', sans-serif;
+    --padding: 15px 20px;
+    --cor-escura: #8485d9;
+    --cor-media: #b7b6ec;
+    --cor-clara: #eae7ff;
+}
+
+.container {
+    
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.534);
+}
+
+.container .dados{
+    background-color: var(--cor-clara);
+    width: 50%;
+    height: 100%;
+    padding: var(--padding);
+}
+
+.container .dados h1 {
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+
+.container .campo_divisor {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-left: 30px;
+}
+
+.container .campo input {
+    padding: var(--padding);
+    border: none;
+    border-radius: 5px;
+    width: 85%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.container .termos_de_uso{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10px;
+}
+
+.container .caixa_termos__de__uso{
+    display: flex;  
+    text-align: left;
+    width: 100%;
+    margin-top: 8px;
+    gap: 5px;
+}
+
+.container .campo {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+
+}
+
+.container .campo p {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px ;
+}
+
+.container .campo span{
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.container .campo_divisor .erro input {
+    border: 1px solid red;
+    padding: var(--padding);
+    width: 85%;
+    border-radius: 5px;
+}
+
+.container .campo_divisor .erro span{
+    color: red;
+    visibility: visible;
+}
+
+
+.container .finalizar_cadastro{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .finalizar_cadastro button{
+    width: 60%;
+    height: 35px;
+    border: 1.5px solid var(--cor-escura);
+    border-radius: 4px;
+    background-color: #fff;
+    color: var(--cor-escura);
+    font-weight: 600;
+    font-size: 15px;
+} 
+
+.container .finalizar_cadastro button:hover{
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    transition: .5s;
+} 
+
+
+.container .link{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    margin-top: 5px;
+    width: 100%;
+}
+.container .link a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--cor-escura);
+}
+
+.container .link a:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+.container .imagem{
+    background-color: beige;
+    width: 50%;
+    height: 100%;
+}
+
+.container .imagem img{
+    width: 100%;
+    height: 75vh;
+    display: block;
+    margin-top: 30px;
+    
+}
+
+/*Configs da pagina de login*/
+
+.container__login{
+    width: 30% ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--cor-clara);
+    color: black;
+    padding: var(--padding);
+    height: 90vh;
+}
+
+.container__login h2{
+    text-align: left;
+    font-size: 32px;
+}
+.container__login p{
+    margin-bottom: 10px;
+}
+
+.container__login .campo__login{
+    margin-top: 20px;
+}
+
+.container__login .campo__login input{
+  width: 370px;
+  
+}
+
+#enviar_login{
+    background-color: var(--cor-clara);
+    border: 2px solid var(--cor-escura);
+    color: var(--cor-escura);
+    font-size: 14px;
+    font-weight: 600;
+    width: 370px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 50px;
+    
+}
+
+#enviar_login:hover{
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    transition: .5s;
+}
+
+.container__login .erro input{
+    border: 1px solid red;
+    padding: var(--padding);
+    border-radius: 5px;
+}
+
+.container__login .erro span{
+    color: red;
+    visibility: visible;
+}
+
+

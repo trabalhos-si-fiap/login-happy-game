@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        
+
+        <div class="dados">
+            <h1>Cadastre-se</h1>
+            <form method="post" class="cadastro" action="" id="form">
+                    <div class="campo_divisor">
+                        <div class="campo ">
+                            <p>Digite seu nome *</p>
+                                <input type="text" 
+                                name="nome" 
+                                id="txt_nome" 
+                                placeholder="Nome">
+                                <span >Aqui vai a mensagem de erro</span>
+                        </div>
+                        <div class="campo">
+                            <p>Data de nascimento *</p>
+                            <input type="date" 
+                            name="idade" 
+                            id="txt_idade">
+                            <span class="">Aqui vai a mensagem de erro</span>
+                        </div>
+                    </div>
+
+                    <div class="campo_divisor">
+
+                        <div class="campo">
+                            <p>Digite seu e-mail *</p>
+                            <input type="email" 
+                            name="email" 
+                            id="txt_email" 
+                            placeholder="usuario123@email.com"
+                            class="">
+                            <span class="">Aqui vai a mensagem de erro</span>
+                        </div>
+
+                        <div class="campo">
+                            <p>Digite sua senha *</p>
+                                <input type="password" 
+                                name="senha" 
+                                id="txt_senha" 
+                                placeholder="Senha">
+                                <span class="">Aqui vai a mensagem de erro</span>
+                        </div>
+                    </div>
+
+                    <div class="campo_divisor termos_de_uso">
+                        <div class="caixa_termos__de__uso">
+                            <input type="checkbox" name="termos" id="termos_de_uso">
+                            <label for="termos_de_uso">Li e aceito os <a href="#">Termos de uso</a>.</label>
+                        </div>
+                        <div class="caixa_termos__de__uso">
+                            <input type="checkbox" name="termos" class="termos_de_uso" id="maior_de_idade" >
+                            <label for="maior_de_idade">Tenho mais de 18 anos.</label>
+                        </div>
+                        <div class="caixa_termos__de__uso">
+                            <input type="checkbox" name="termos" class="termos_de_uso" id="menor_de_idade">
+                            <label for="menor_de_idade">Sou menor de 18 anos, mas possuo autorização parental, para uso do site.</label>
+                        </div>
+                    </div>
+
+                    <div class="campo_divisor">
+                        <div class="finalizar_cadastro">
+                            <button type="submit">Continuar</button>
+                        </div>
+                    </div>
+
+            </form>
+
+                <div class="link">
+                    <p>Ja tenho uma <a href="login.html">Conta</a>.</p>
+                </div>
+
+                <div class="link">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+
+            </div>
+
+            <div class="imagem">
+                <img src="assets/undraw_undraw_undraw_businessman_e7v0_qrld_-1-_hvmv.svg" alt="empresario">
+            </div>
+        </div>
+    </div>
+    <script src="assets/app.js"></script>
+    
+</body>
+</html>

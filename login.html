@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Log in</title>
+</head>
+<body>
+    <div class=" container container__login">
+        <h2>Log in</h2>
+        <p>Digite os seus dados abaixo para entrar</p> 
+
+        <form action="" class="login" id="form_login" method="post">
+            <div class="campo campo__login">
+                <label for="txt_email_login">Email*</label>
+                <input type="email" name="email" id="txt_email_login" placeholder="usuario123@email.com">
+                <span >Aqui vai a mensagem de erro</span>
+            </div>
+            <div class="campo campo__login">
+                <label for="txt_senha_usuario">Digite a senha*</label>
+                <input type="password" name="senha_usuario" id="txt_senha_usuario" placeholder="Senha">
+                <span >Aqui vai a mensagem de erro</span>
+            </div>
+
+            <div class="campo campo__login">
+                <button type="submit" id="enviar_login">Continuar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="assets/login.js"></script>
+    
+</body>
+</html>
