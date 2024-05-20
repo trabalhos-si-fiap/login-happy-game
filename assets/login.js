@@ -3,6 +3,20 @@ const emailLogin = document.querySelector('#txt_email_login');
 const senhaLogin = document.querySelector('#txt_senha_usuario')
 
 
+
+
+
+
+const novaSenha_ = document.querySelector('#form_nova_senha_enviada')
+
+
+novaSenha_.addEventListener("submit", (e) => {
+    e.preventDefault();  
+    alert('Senha alterada!')
+    redirecionador('login')
+
+})
+
 formularioLogin.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -57,5 +71,23 @@ function errorInput(input,message){
 
     formItem.className = "campo campo__login erro"
 
+}
+
+
+
+function redirecionador(pathName){
+
+
+    // Obter a URL atual
+    let currentUrl = new URL(window.location);
+
+    // Modificar o caminho
+    currentUrl.pathname = `/${pathName}.html`;
+
+    // Opcional: Modificar parâmetros de consulta
+    // currentUrl.searchParams.set('parametro', 'valor');
+
+    // Redirecionar para a nova URL
+    window.location.href = currentUrl.toString();
 }
 

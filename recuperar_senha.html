@@ -7,42 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Log in</title>
+    <title>Recuperar senha</title>
 </head>
 <body>
     <div class=" container container__login">
-        <h2>Log in</h2>
-        <p>Digite os seus dados abaixo para entrar</p> 
+        <h2>Recuperar senha</h2>
+        <p>Digite seu e-mail para receber o código de recuperação de senha</p> 
 
-        <form action="" class="login" id="form_login" method="post">
+        <form action="" class="login" id="form_recuperar_senha" method="post">
             <div class="campo campo__login">
                 <label for="txt_email_login">Email*</label>
                 <input type="email" name="email" id="txt_email_login" placeholder="usuario123@email.com">
                 <span >Aqui vai a mensagem de erro</span>
             </div>
-            <div class="campo campo__login">
-                <label for="txt_senha_usuario">Digite a senha*</label>
-                <input type="password" name="senha_usuario" id="txt_senha_usuario" placeholder="Senha">
-                <span >Aqui vai a mensagem de erro</span>
-            </div>
 
             <div class="campo campo__login">
-                <button type="submit" id="enviar_login">Continuar</button>
+                <button type="submit" id="enviarCodigoTrocarSenha">Enviar código</button>
             </div>
 
         </form>
 
-        <div class="link">
-            <p><a href="index.html">Cadastrar</a> um novo usuário.</p>
-        </div>
-
-        <div class="link">
-            <a href="./recuperar_senha.html">Esqueceu sua senha?</a>
-        </div>
-
     </div>
 
-    <script src="assets/login.js"></script>
+    <script src="assets/recuperar_senha.js"></script>
     
 </body>
 </html>
