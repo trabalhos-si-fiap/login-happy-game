@@ -70,6 +70,18 @@
                             <label for="menor_de_idade">Sou menor de 18 anos, mas possuo autorização parental, para uso do site.</label>
                         </div>
                     </div>
+                    <div class="container_captcha">
+                            <h2>Captcha</h2>
+                            <p id="captchaText"></p>
+                            <div id="captchaForm">
+                                <label for="captchaInput" id="texto_captcha">Digite os caracteres que você vê:</label>
+                        <div class="container_captcha">
+                            <input type="text" id="captchaInput" name="captchaInput" placeholder="Digite os fatores aqui">
+                            <button type="custom" class="btn_padrao" id="meu_botao">Verificar</button>
+                        </div>
+                            </div>
+                    </div>
+                    
 
                     <div class="campo_divisor">
                         <div class="finalizar_cadastro">
@@ -95,6 +107,7 @@
         </div>
     </div>
     <script src="assets/app.js"></script>
+    <script src="assets/captcha.js"></script>
     
 </body>
 </html>

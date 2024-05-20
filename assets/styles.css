@@ -229,3 +229,42 @@
     margin-top: none;
     width: 100%;
 }
+
+.caixa{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caixa h2{
+    font-family: var(--fonte), sans-serif;
+    text-align: center;
+}
+
+.caixa p{
+    font-family: var(--fonte), sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+}
+.caixa form{
+    font-family: var(--fonte), sans-serif;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#captchaInput{
+    width: 370px;
+    margin-bottom: 15px;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+
+.container_captcha{
+    margin-top: 20px;   
+}
